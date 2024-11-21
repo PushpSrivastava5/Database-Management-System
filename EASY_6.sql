@@ -1,0 +1,1 @@
+select count(*) from diagnoses_icd where icd_code = (select icd_code from d_icd_diagnoses where long_title = 'Cholera due to vibrio cholerae')
